@@ -3,13 +3,24 @@
   <v-container class="mt-6">
     <v-app-bar app flat dense color="white">
       <v-spacer />
-      <v-btn @click="goTo('/')" icon>
+        <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
+      <v-btn  v-bind="attrs"
+          v-on="on" @click="goTo('/')" icon>
         <v-icon color="yellow"> mdi-arrow-u-left-top-bold </v-icon>
       </v-btn>
-      <v-btn @click="reload" icon>
+       </template>
+      <span>Regresa a la pagina principal</span>
+    </v-tooltip>
+      <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
+      <v-btn   v-bind="attrs"
+          v-on="on" @click="reload" icon>
         <v-icon color="success"> mdi-reload </v-icon>
       </v-btn>
-
+     </template>
+      <span>Recarga para ver nuevas publicaciones</span>
+    </v-tooltip>
       <pageInfo />
     </v-app-bar>
     <v-row class="mx-auto">
@@ -90,6 +101,7 @@ export default {
       this.$router.replace(path);
     },
     fetchData() {
+
       let headersList = {};
 
       fetch("https://quotes-api.deta.dev/motivational/get-quotes", {
@@ -100,7 +112,6 @@ export default {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           this.cards = data;
           this.overlay = false;
         });
