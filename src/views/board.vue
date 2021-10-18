@@ -7,7 +7,7 @@
         <v-icon color="yellow"> mdi-arrow-u-left-top-bold </v-icon>
       </v-btn>
       <v-btn @click="reload" icon>
-        <v-icon color="success"> mdi-plus </v-icon>
+        <v-icon color="success"> mdi-reload </v-icon>
       </v-btn>
 
       <pageInfo />
@@ -82,7 +82,7 @@ export default {
   methods: {
     reload() {
       this.overlay = true;
-      alert("dewew");
+     
       this.fetchData();
     },
 
