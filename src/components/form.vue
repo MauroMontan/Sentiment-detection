@@ -209,7 +209,6 @@ export default {
         .then(() => {
           this.loading = false;
           this.dialog = false;
-          
         });
     },
     edit(index, item) {
