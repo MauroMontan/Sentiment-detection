@@ -6,11 +6,15 @@
       <v-btn @click="goTo('/')" icon>
         <v-icon color="yellow"> mdi-arrow-u-left-top-bold </v-icon>
       </v-btn>
-
      
       <pageInfo />
     </v-app-bar>
     <v-row class="mx-auto">
+   
+      <h1 v-if="cards.length === 0" class="mx-auto">Sé el primero en compartir algo ! 😀
+    
+      </h1>
+      
       <v-overlay :value="overlay">
         <v-progress-circular
           color="white"
