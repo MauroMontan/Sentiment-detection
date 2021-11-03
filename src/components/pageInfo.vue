@@ -9,27 +9,19 @@
 
       <v-card flat style="border-radius: 14px">
         <v-card-title class="text-center">
-          <h2 class="mx-auto">Reto Master</h2>
+          <h2 class="mx-auto grey-text">Reto Master</h2>
         </v-card-title>
 
         <v-card-text class="text-justify">
-          <v-alert
-            flat
-            border="left"
-            colored-border
-            color="deep-purple accent-4"
-            elevation="2"
-          >
-            Esta api pronto estara disponible para su implementación en tus
-            proyectos, por lo mientras puedes ayudar a contribuir haciendo una
-            publicación o leyendo los demás aportes :).
-          </v-alert>
-          <v-alert flat border="left" colored-border type="info" elevation="2">
+          <v-alert outlined border="left" type="info">
             El propósito del reto está enfocado a contribuir y ayudar a
-            solucionar un problema en mi comunidad. La implementación de 
-            inteligencia artificial ayudara a filtrar las contribuciones
-            por etiquetas, prevenir el uso de insultos y evitar
-            malos consejos de publicaciones no deseadas
+            solucionar un problema en mi comunidad. La implementación de Azure
+            Cognitive Service for language ayuda a clasificar los sentimientos
+            de los posts y a determinar si son positivos o negativos.
+          </v-alert>
+          <v-alert border="top" type="warning" outlined>
+            Por privacidad he decido no realizar un registro de usuarios.
+            Es totalmente anónimo.
           </v-alert>
         </v-card-text>
 

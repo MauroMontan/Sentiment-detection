@@ -2,7 +2,7 @@
   <v-container fill-height fluid>
     <h1
       class="mx-auto text-center"
-      style="font-size: 55px; font-family: 'Indie Flower', cursive"
+      style="font-size: 46px; font-family: 'Indie Flower', cursive"
     >
       Comparte un consejo, una frase, motiva a alguien !
     </h1>
@@ -22,12 +22,8 @@
         exploremos!
       </v-btn>
     </v-row>
-    <v-img
-      max-width="190"
-      style="top: 60px; left:70%"
-      src="../assets/text.svg"
-    >
-    </v-img>
+ 
+    
   </v-container>
 </template>
 
