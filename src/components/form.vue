@@ -20,11 +20,9 @@
       <v-card class="pt-5 pb-3" style="border-radius: 16px">
         <v-card-title class="mx-auto">
           <v-layout justify-center>
-            <p
-              style="font-family: 'Amatic SC', cursive; font-size: 33px"
-              
-              >Piensa algo que quisieras compartir</p
-            >
+            <p style="font-family: 'Amatic SC', cursive; font-size: 33px">
+              Piensa algo que quisieras compartir
+            </p>
           </v-layout>
         </v-card-title>
         <v-card-text>
@@ -114,24 +112,31 @@
               </v-list-item-action>
             </template>
           </v-combobox>
-          <v-alert style="font-family: 'Fredoka One', cursive; font-size: 16px" type="warning" dense outlined>
+          <v-alert
+            style="font-family: 'Fredoka One', cursive; font-size: 16px"
+            type="warning"
+            dense
+            outlined
+          >
             Publicaciones con insultos o que aporten lo opuesto al proposito de
             este proyecto seran eliminadas. Sé amable :)
           </v-alert>
         </v-card-text>
 
         <v-spacer></v-spacer>
-
-        <v-btn
-          style="margin-left: 40%"
-          outlined
-          rounded
-          :loading="loading"
-          color="green"
-          text
-          @click="test"
-          >Publicar
-        </v-btn>
+        <v-card-actions>
+          <v-layout justify-center>
+            <v-btn
+              outlined
+              rounded
+              :loading="loading"
+              color="green"
+              text
+              @click="test"
+              >Publicar
+            </v-btn>
+          </v-layout>
+        </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
